@@ -15,3 +15,7 @@ class PostController <Sinatra::Base
 get "/" do
 
 @title_homepage = "Index 1"
+erb :'posts/index'
+end
+
+end
