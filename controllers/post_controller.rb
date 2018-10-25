@@ -49,6 +49,12 @@ $videos = [
     "<h1> hi Lorem ipsum t anim id est laborum.</h1>"
   end
 
+  get "/:id_from_video" do
+    id = params[:id_from_video].to_i
+    @post = $videos[id]
+    erb :'posts/video-1'
+  end
+
 
 
 end
