@@ -1,5 +1,5 @@
 # class is the child of sinatra base
-class PostController <Sinatra::Base
+class PostController < Sinatra::Base
 # for rack to work
   set :root, File.join(File.dirname(__FILE__), "..")
   #
@@ -7,7 +7,6 @@ class PostController <Sinatra::Base
 
   configure:development do
     register Sinatra::Reloader
-
   end
 # creating the Hash.new
 $videos = [
@@ -26,7 +25,6 @@ $videos = [
     title:"Video 3",
     description: "This video is about....."
   },
-
   {
     id:4,
     title:"Video 4",
@@ -52,7 +50,7 @@ $videos = [
   get "/:id_from_video" do
     id = params[:id_from_video].to_i
     @post = $videos[id]
-    erb :'posts/video-1'
+    erb :'posts/video1'
   end
 
 

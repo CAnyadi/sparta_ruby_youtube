@@ -1,19 +1,8 @@
-<%# <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body> %>
-    <% @videos.each do |videos| %>
-    <div class="">
-      <h2>
-        <a href="/<%= videos[:id]%>"><%= videos[:title]%></a>
-      </h2>
-    </div>
-<footer>
-</footer>
-    <% end %>
 
-  <%# </body>
-<%# </html> %> 
+<% @videos.each do |videos| %>
+<div class="">
+<h2>
+<a href="/<%= videos[:id]%>"><%= videos[:title]%></a>
+</h2>
+</div>
+<% end %>
