@@ -15,27 +15,27 @@ $videos = [
   {id:0,
     title: "Video-1",
     body: "esbrjfhjb.",
-    link: "https://www.youtube.com/watch?v=WCppH6Jvn5Q"
+    link: "z1LELyptiDI"
   },
 { id:1,
   title: "Video-2",
   body: "ekrhbjbfjsf",
-  link: "eshgfvbjegsfvbhgsfv"
+  link: "-3CFKAGPdtc"
 },
 { id:2,
   title: "Video-3",
   body: "ekrhbjbfjsf",
-  link: "eshgfvbjegsfvbhgsfv"
+  link: "toIoRnaDdrU"
 },
 { id:3,
   title: "Video-4",
   body: "ekrhbjbfjsf",
-  link: "eshgfvbjegsfvbhgsfv"
+  link: "WCppH6Jvn5Q"
 },
 { id:4,
   title: "Video-5",
   body: "ekrhbjbfjsf",
-  link: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  link: "vTke0eK0cUY"
 }
 ]
   # static route- doesn't change
@@ -47,16 +47,13 @@ $videos = [
     erb :'posts/index'
 
   end
-
   get "/new" do
     "<h1>hello Sinatra new page</h1>"
   end
-
   # dynamic route- changes
   get "/:id_from_URL" do
     id = params[:id_from_URL].to_i
     @videos = $videos[id]
-    erb :'posts/video1'
+    erb :'posts/show'
   end
-
 end

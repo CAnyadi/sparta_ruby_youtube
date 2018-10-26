@@ -12,5 +12,5 @@
 <h1><%= @videos[:title]%></h1>
 <p><%= @videos[:body]%></p>
 <body>
-  <%= @videos[:link]%>
+  <iframe src="https://www.youtube.com/embed/<%=@videos[:link]%>" width="700" height="600"></iframe>
 </body>
