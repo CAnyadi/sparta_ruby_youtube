@@ -12,25 +12,30 @@ end
 # find out the meaning of dollar sign in ruby
 $videos = [
 
-  {id:1,
+  {id:0,
     title: "Video-1",
-    body: "esbrjfhjb."
+    body: "esbrjfhjb.",
+    link: "https://www.youtube.com/watch?v=WCppH6Jvn5Q"
   },
-{ id:2,
+{ id:1,
   title: "Video-2",
-  body: "ekrhbjbfjsf"
+  body: "ekrhbjbfjsf",
+  link: "eshgfvbjegsfvbhgsfv"
+},
+{ id:2,
+  title: "Video-3",
+  body: "ekrhbjbfjsf",
+  link: "eshgfvbjegsfvbhgsfv"
 },
 { id:3,
-  title: "Video-3",
-  body: "ekrhbjbfjsf"
+  title: "Video-4",
+  body: "ekrhbjbfjsf",
+  link: "eshgfvbjegsfvbhgsfv"
 },
 { id:4,
-  title: "Video-4",
-  body: "ekrhbjbfjsf"
-},
-{ id:5,
   title: "Video-5",
-  body: "ekrhbjbfjsf"
+  body: "ekrhbjbfjsf",
+  link: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }
 ]
   # static route- doesn't change
