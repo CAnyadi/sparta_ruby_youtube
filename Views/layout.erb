@@ -8,10 +8,9 @@
   <body>
     <link rel="stylesheet" href="index.css">
     <%= erb(:'partials/navigation', :layout => false)%>
-
     <%# template content injected here %>
-
     <%= yield%>
-
+    
+    <%= erb(:'partials/footer', :layout => false)%>
   </body>
 </html>

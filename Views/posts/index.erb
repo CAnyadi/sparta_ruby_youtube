@@ -1,7 +1,23 @@
 <link rel="stylesheet" href="/index.css">
+<h2>Welcome to my Homepage</h2>
+<title>Homepage</title>
+
 <% @videos.each do |videos| %>
 <div class="">
 
 </div>
 <% end %>
-<h2>Welcome to my Homepage</h2>
+
+<div class="youtube-logo">
+  <a href="https://www.youtube.com/?gl=GB&hl=en-GB"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4ZzHr4CnsHEMvxIPd0xQ3lyyxcRlkPlwMNPI2KQVQuVUQCN2Sg" alt="image of you tube logo" height = "100" width= "170"></a>
+</div>
+<div class="search-bar">
+  <form class="example" action="action_page.php">
+    <input type="text" name="search" placeholder="Search...">
+    <button type="submit" name="button" height = "50" width= "70">Submit</button>
+  </form>
+</div>
+
+<div class="home-video">
+  <iframe src="https://www.youtube.com/embed/A_pgjUO0wD0" width="700" height="600"></iframe>
+</div>
